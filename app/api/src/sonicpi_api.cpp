@@ -982,7 +982,7 @@ void SonicPiAPI::Stop()
 
 uint32_t SonicPiAPI::MaxWorkspaces() const
 {
-    return 10;
+    return 20;  // was 10
 }
 
 void SonicPiAPI::LoadWorkspaces()

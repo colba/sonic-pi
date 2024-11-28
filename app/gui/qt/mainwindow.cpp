@@ -1656,6 +1656,26 @@ std::string MainWindow::number_name(int i)
         return "eight";
     case 9:
         return "nine";
+    case 10:
+        return "ten";
+    case 11:
+        return "eleven";
+    case 12:
+        return "twelve";
+    case 13:
+        return "thirteen";
+    case 14:
+        return "4teen";
+    case 15:
+        return "fifteen";
+    case 16:
+        return "6teen";
+    case 17:
+        return "7teen";
+    case 18:
+        return "8teen";
+    case 19:
+        return "9teen";
     default:
         assert(false);
         return "";
