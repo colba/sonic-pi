@@ -101,6 +101,26 @@ std::string string_number_name(int i)
         return "eight";
     case 9:
         return "nine";
+    case 10:
+        return "ten";
+    case 11:
+        return "eleven";
+    case 12:
+        return "twelve";
+    case 13:
+        return "thirteen";
+    case 14:
+        return "4teen";
+    case 15:
+        return "fifteen";
+    case 16:
+        return "6teen";
+    case 17:
+        return "7teen";
+    case 18:
+        return "8teen";
+    case 19:
+        return "9teen";
     default:
         assert(false);
         return "";
@@ -148,6 +168,46 @@ uint32_t string_number_from_name(const std::string& name)
     else if (name.find("nine") != std::string::npos)
     {
         return 9;
+    }
+    if (name.find("ten") != std::string::npos)
+    {
+        return 10;
+    }
+    else if (name.find("eleven") != std::string::npos)
+    {
+        return 11;
+    }
+    else if (name.find("twelve") != std::string::npos)
+    {
+        return 12;
+    }
+    else if (name.find("thirteen") != std::string::npos)
+    {
+        return 13;
+    }
+    else if (name.find("4teen") != std::string::npos)
+    {
+        return 14;
+    }
+    else if (name.find("fifteen") != std::string::npos)
+    {
+        return 15;
+    }
+    else if (name.find("6teen") != std::string::npos)
+    {
+        return 16;
+    }
+    else if (name.find("7teen") != std::string::npos)
+    {
+        return 17;
+    }
+    else if (name.find("8teen") != std::string::npos)
+    {
+        return 18;
+    }
+    else if (name.find("9teen") != std::string::npos)
+    {
+        return 19;
     }
     return 0;
 }

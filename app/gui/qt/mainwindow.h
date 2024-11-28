@@ -418,7 +418,7 @@ private:
     QSplashScreen* splash;
 
     bool i18n;
-    static const int workspace_max = 10;
+    static const int workspace_max = 20;  // was 10
     SonicPiScintilla* workspaces[workspace_max];
     QTabWidget* docsNavTabs;
     QTabWidget* southTabs;
