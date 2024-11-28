@@ -13,13 +13,13 @@ Modifications to increase number of Workspaces from 10 to 20
 
 20 Workspace tabs instead of 10
 
-next/previous keyboard shortcuts "S-M-[/S-M-]" work  
+next/previous keyboard shortcuts "S-M-[ / S-M-]" work  
 
-Each Workspace is saved to "~\.sonic-pi\store\default\" and reloaded at startup
+Each Workspace is saved to "\~\\.sonic-pi\store\default\" and reloaded at startup
 
-"~\.sonic-pi\store\default\workspace_4teen.spi"
-"~\.sonic-pi\store\default\workspace_6teen.spi"
-"~\.sonic-pi\store\default\workspace_7teen.spi"
+"\~\\.sonic-pi\store\default\workspace_4teen.spi"
+"\~\\.sonic-pi\store\default\workspace_6teen.spi"
+"\~\\.sonic-pi\store\default\workspace_7teen.spi"
 "~\.sonic-pi\store\default\workspace_8teen.spi"
 "~\.sonic-pi\store\default\workspace_9teen.spi"
 "~\.sonic-pi\store\default\workspace_eight.spi"
