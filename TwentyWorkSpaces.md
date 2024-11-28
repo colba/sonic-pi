@@ -26,7 +26,7 @@ next/previous keyboard shortcuts  S-M-[ / S-M-]  work
 Each Workspace is saved to \~\\.sonic-pi\store\default\ and reloaded at startup
 
  \~\\.sonic-pi\store\default\workspace_zero.spi   
- \~\\.sonic-pi\store\default\workspace_one.spi 
+ \~\\.sonic-pi\store\default\workspace_one.spi   
  \~\\.sonic-pi\store\default\workspace_two.spi   
  \~\\.sonic-pi\store\default\workspace_three.spi   
  \~\\.sonic-pi\store\default\workspace_four.spi  
