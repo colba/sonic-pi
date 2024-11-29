@@ -3,7 +3,8 @@
 Central place to define howmany workspaces exists
 */
 
-int get_MaxWorkspaces(); 
+static const int workspace_max = 15;
 
-// const;
+//int get_MaxWorkspaces(); 
+
 

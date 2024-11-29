@@ -1,7 +1,8 @@
 
 #include <api/max_workspaces.h>
-
-int get_MaxWorkspaces() //const
+/*
+int get_MaxWorkspaces() 
 {
-    return 15; // 20; // was 10
+    return workspace_max; 
 }
+*/

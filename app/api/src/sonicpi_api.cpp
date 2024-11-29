@@ -980,9 +980,11 @@ void SonicPiAPI::Stop()
     SendOSC(msg);
 }
 
+#include "api/max_workspaces.h"
+
 uint32_t SonicPiAPI::MaxWorkspaces() const
 {
-    return 20;  // was 10
+    return workspace_max;  // 20; // was 10
 }
 
 void SonicPiAPI::LoadWorkspaces()
