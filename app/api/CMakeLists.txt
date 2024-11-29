@@ -6,7 +6,9 @@ set(API_SRC
     ${API_ROOT}/src/sonicpi_api.cpp
     ${API_ROOT}/src/string_utils.cpp
     ${API_ROOT}/src/file_utils.cpp
+    ${API_ROOT}/src/max_workspaces.cpp
 
+    ${API_ROOT}/include/api/max_workspaces.h
     ${API_ROOT}/include/api/string_utils.h
     ${API_ROOT}/include/api/file_utils.h
     ${API_ROOT}/include/api/logger.h

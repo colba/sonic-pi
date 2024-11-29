@@ -31,6 +31,9 @@
 
 #include "api/osc/osc_pkt.hh"
 
+
+#include "api/string_utils.h"
+
 #include "config.h"
 
 class QAction;

@@ -1634,6 +1634,9 @@ QString MainWindow::cpuDescription()
 
 std::string MainWindow::number_name(int i)
 {
+
+    return string_number_name(i);
+    /*
     switch (i)
     {
     case 0:
@@ -1680,6 +1683,7 @@ std::string MainWindow::number_name(int i)
         assert(false);
         return "";
     }
+    */
 }
 
 void MainWindow::loadWorkspaces()

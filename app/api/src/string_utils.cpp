@@ -79,6 +79,8 @@ std::string random_string(std::string::size_type length)
 
 std::string string_number_name(int i)
 {
+    return std::to_string(i);
+    /*
     switch (i)
     {
     case 0:
@@ -125,10 +127,32 @@ std::string string_number_name(int i)
         assert(false);
         return "";
     }
+    */
 }
 
 uint32_t string_number_from_name(const std::string& name)
 {
+    /*
+    Use the first sequence of digits in the string
+    */
+    std::string::size_type firstdigitp,lastdigitp;
+    firstdigitp = name.find_first_of("0123456789");
+    if (firstdigitp != std::string::npos)
+    {
+        lastdigitp = name.find_first_not_of("0123456789", firstdigitp);
+        if (lastdigitp == std::string::npos)
+        {
+            return std::stoi(name.substr(firstdigitp));
+        }
+        else
+        {
+            return std::stoi(name.substr(firstdigitp, lastdigitp - firstdigitp + 1));
+        }
+    }
+    // gets here is are digits in the string so default to 0
+    return 0;
+
+    /*
     if (name.find("zero") != std::string::npos)
     {
         return 0;
@@ -210,6 +234,7 @@ uint32_t string_number_from_name(const std::string& name)
         return 19;
     }
     return 0;
+    */
 }
 
 } // namespace SonicPi 
