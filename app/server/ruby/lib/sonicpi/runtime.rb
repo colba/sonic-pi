@@ -1437,6 +1437,11 @@ module SonicPi
     end
 
     def normalise_buffer_name(name)
+        norm = name.sub("workspace_","")    
+        return norm
+    end
+
+    def old_normalise_buffer_name(name)
       norm = case name
              when "workspace_zero"
                "0"

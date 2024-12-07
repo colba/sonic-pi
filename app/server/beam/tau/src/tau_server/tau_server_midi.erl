@@ -112,8 +112,9 @@ loop(State) ->
             end,
             ?MODULE:loop(State);
         {timeout, _Timer, update_midi_ports} ->
+            logger:info(to_str("timeout, _Timer, update_midi_ports")),
             NewState = update_midi_ports(State),
-            erlang:start_timer(5000, ?MODULE, update_midi_ports),
+            %% # erlang:start_timer(5000, ?MODULE, update_midi_ports),
             ?MODULE:loop(NewState);
         Any ->
             S = lists:flatten(io_lib:format("MIDI Server got unexpected message ~p", [Any])),
@@ -125,6 +126,7 @@ update_midi_ports(State) ->
     NewIns = sp_midi:midi_ins(),
     NewOuts = sp_midi:midi_outs(),
     NewPorts = {NewIns, NewOuts},
+    logger:info(to_str(NewPorts)),
     OldPorts = {maps:get(midi_ins, State), maps:get(midi_outs, State)},
     if
         NewPorts =:= OldPorts ->
